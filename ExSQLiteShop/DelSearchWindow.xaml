@@ -1,0 +1,38 @@
+﻿<Window x:Class="ExSQLiteShop.DelSearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExSQLiteShop"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Name="window"
+        mc:Ignorable="d"
+        Title="DelSearchWindow" Height="1000" Width="1200">
+    <Grid>
+        <StackPanel>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="SearchName"   Width="250" Height="30" Margin="50,50,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Поиск по имени" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="SearchFIO"   Width="250" Height="30" Margin="50,10,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Поиск по автору" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="SearchGenre"   Width="250" Height="30" Margin="50,10,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Поиск по жанру" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <Button HorizontalAlignment="Left" Content="Search" Width="1180" Margin="10" Click="Button_Click"></Button>
+            <TextBox HorizontalAlignment="Left" Margin="50,0,0,0" BorderThickness="2" x:Name="Searcher" Width="330" Height="104" IsReadOnly="True" VerticalScrollBarVisibility="Visible"/>
+            <RadioButton HorizontalAlignment="Left" x:Name="RadioName" Width="18" Margin="20,-260,100,260"></RadioButton>
+            <RadioButton HorizontalAlignment="Left" x:Name="RadioFIO" Width="18" Margin="20,-235,100,235"></RadioButton>
+            <RadioButton HorizontalAlignment="Left" x:Name="RadioGenre" Width="18" Margin="20,-213,100,213"></RadioButton>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="DelID"  Width="330" Height="30" Margin="50,-50,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Введите ID для удаления" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+
+            <Button Content="Del" Width="1178" Click="Button_Click_1"></Button>
+            <TextBox x:Name="printbox" BorderThickness="2" Margin="20,20,20,0" Height="150" VerticalScrollBarVisibility="Visible" IsReadOnly="True"></TextBox>
+            <Button Content="Print" Margin="20,20,20,0" Click="Button_Click_2" ></Button>
+            
+             <TextBox HorizontalAlignment="Left" Padding="2" x:Name="idedit"   Width="290" Height="30" Margin="20,10,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Введите ID книги для редактирования" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="nameedit"   Width="100" Height="30" Margin="20,5,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Name edit" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="fioedit"   Width="100" Height="30" Margin="20,5,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="FIO Edit" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="nameizdaedit"   Width="100" Height="30" Margin="20,5,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Name edit" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="pagesedit"   Width="100" Height="30" Margin="20,5,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Page edit" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="yearsedit"   Width="100" Height="30" Margin="20,5,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Years edit" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="genreedit"   Width="100" Height="30" Margin="20,5,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Genre edit" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="priceedit"   Width="100" Height="30" Margin="20,5,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Price edit" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <Button Content="Set edit" Margin="20,20,20,0" Click="Button_Click_3" ></Button>
+        </StackPanel>
+    </Grid>
+</Window>

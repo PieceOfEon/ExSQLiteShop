@@ -1,0 +1,29 @@
+﻿<Window x:Class="ExSQLiteShop.AddBookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExSQLiteShop"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Name="window"
+        mc:Ignorable="d"
+        Title="AddBookWindow" Height="600" Width="1000">
+    <Grid>
+        <StackPanel>
+            
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="NamesBook"   Width="250" Height="30" Margin="50,50,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Название книги" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="FIO"   Width="250" Height="30" Margin="50,10,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Ф И О" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="NamesIzda"   Width="250" Height="30" Margin="50,10,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Издательство" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="Pages"   Width="250" Height="30" Margin="50,10,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Страницы" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="YearsIzda"   Width="250" Height="30" Margin="50,10,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Год издательства" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="Genre"   Width="250" Height="30" Margin="50,10,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Жанр" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox HorizontalAlignment="Left" Padding="2" x:Name="Price"   Width="250" Height="30" Margin="50,10,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Цена" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <Button Content="Enter" Margin="50" Click="Button_Click"/>
+            <TextBox x:Name="AddNow" HorizontalAlignment="Left" BorderThickness="1" TextWrapping="Wrap" Width="528" Margin="350,-400,100,100" IsReadOnly="True" />
+
+
+        </StackPanel>
+        
+
+    </Grid>
+</Window>

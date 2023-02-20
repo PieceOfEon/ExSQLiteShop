@@ -1,0 +1,19 @@
+﻿<Window x:Class="ExSQLiteShop.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExSQLiteShop"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="600" Width="1000">
+    <Grid>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="71,65,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Del/Search/Print/Edit" HorizontalAlignment="Left" Margin="71,118,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        
+        <Button Content="Sell" HorizontalAlignment="Left" Margin="71,172,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
+        <Button Content="Списать" HorizontalAlignment="Left" Margin="71,226,0,0" VerticalAlignment="Top"/>
+        <Button Content="Action" HorizontalAlignment="Left" Margin="71,278,0,0" VerticalAlignment="Top"/>
+        <Button Content="Put the book down" HorizontalAlignment="Left" Margin="71,331,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
