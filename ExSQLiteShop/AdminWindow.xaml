@@ -5,15 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExSQLiteShop"
         mc:Ignorable="d"
-        Title="AdminWindow" Height="600" Width="1000">
+        Title="AdminWindow" Height="320" Width="1000" Background="Black">
     <Grid>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="71,65,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button Content="Del/Search/Print/Edit" HorizontalAlignment="Left" Margin="71,118,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
-        
-        <Button Content="Sell" HorizontalAlignment="Left" Margin="71,172,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
-        <Button Content="Списать" HorizontalAlignment="Left" Margin="71,226,0,0" VerticalAlignment="Top"/>
-        <Button Content="Action" HorizontalAlignment="Left" Margin="71,278,0,0" VerticalAlignment="Top"/>
-        <Button Content="Put the book down" HorizontalAlignment="Left" Margin="71,331,0,0" VerticalAlignment="Top"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="31,65,0,0" VerticalAlignment="Top" Click="Button_Click" Width="926"/>
+        <Button Content="Del/Search/Print/Edit" HorizontalAlignment="Left" Margin="31,118,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="926"/>
+
+        <Button Content="Sell" HorizontalAlignment="Left" Margin="31,172,0,0" VerticalAlignment="Top" Click="Button_Click_2" Width="926"/>
 
     </Grid>
 </Window>

@@ -10,10 +10,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="1000">
     <Grid>
-        <Button Content="Admin"  HorizontalAlignment="Left" Margin="147,233,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button Content="Registration" HorizontalAlignment="Left" Margin="434,233,0,0" VerticalAlignment="Top"/>
-        <Button Content="Log in" HorizontalAlignment="Left" Margin="767,233,0,0" VerticalAlignment="Top"/>
+        <StackPanel>
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0.5,0">
 
+                    <GradientStop Color="#FF00F3F9" Offset="0"/>
+                    <GradientStop Color="#FFCE00FF" Offset="0.602"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Button Content="Admin" Width="150"  HorizontalAlignment="Left" Margin="100,250,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+            <Button Content="Registration" Width="150"  HorizontalAlignment="Left" Margin="404,50,0,0" Click="Button_Click_1"/>
+            <Button Content="Log in" Width="150" HorizontalAlignment="Left" Margin="700,-110,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
+
+            <TextBox Padding="2" x:Name="UsernameH"   Width="250" Height="30" Margin="-20,-230,25,25" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Username" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <PasswordBox Padding="2" x:Name="PassH"  PasswordChar="$"  Width="250" Height="30" Margin="-20,-140,25,25" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Password"  FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+
+
+        </StackPanel>
 
     </Grid>
 </Window>

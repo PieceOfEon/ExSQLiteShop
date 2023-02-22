@@ -7,9 +7,9 @@
          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Name="window"
         mc:Ignorable="d"
-        Title="AddBookWindow" Height="600" Width="1000">
+        Title="AddBookWindow" Height="475" Width="1000">
     <Grid>
-        <StackPanel>
+        <StackPanel Background="#FFB9EDC3">
             
             <TextBox HorizontalAlignment="Left" Padding="2" x:Name="NamesBook"   Width="250" Height="30" Margin="50,50,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Название книги" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
             <TextBox HorizontalAlignment="Left" Padding="2" x:Name="FIO"   Width="250" Height="30" Margin="50,10,0,0" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Ф И О" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
